@@ -10,7 +10,7 @@ public class GameRunner {
     private static final Logger logger;
 
     static{
-        logger = LoggerFactory.getLogger(GameRunner.class);
+        logger = LoggerFactory .getLogger(GameRunner.class);
         logger.debug("org.GameRunner logger initialized");
     }
 
