@@ -70,4 +70,22 @@ public final class ServerConnection {
             return null;
         }
     }
+
+    public void connectionCleanup(){
+        try {
+            if (serverInputStream!=null)
+            {
+                serverInputStream.close();
+                serverInputStream = null;
+            }
+            if (serverOutputStream!=null)
+            {
+                serverOutputStream.close();
+                serverOutputStream = null;
+            }
+        }catch(IOException ioe){
+            ioe.printStackTrace();
+        }
+
+    }
 }
