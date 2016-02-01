@@ -1,4 +1,4 @@
-package Networking;
+package org.commonNetworking;
 
 /**
  * Created by Graham on 1/31/2016.
@@ -6,11 +6,11 @@ package Networking;
 public abstract class Message {
     public String name;
     public EMessageType type;
-    public String message;
+    public String body;
 
-    public Message(String name, EMessageType type,String message){
+    public Message(String name, EMessageType type, String body){
         this.name = name;
         this.type = type;
-        this.message = message;
+        this.body = body;
     }
 }

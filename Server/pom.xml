@@ -31,7 +31,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>GameRunner</mainClass>
+                            <mainClass>org.GameRunner</mainClass>
                         </manifest>
                     </archive>
                 </configuration>

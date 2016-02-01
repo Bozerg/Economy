@@ -1,11 +1,11 @@
-package Networking;
+package org.commonNetworking;
 
 /**
  * Created by Graham on 1/31/2016.
  */
 public enum EMessageType {
-    WORLD("World"),
-    PLAYER("Player");
+    WORLD("org/commonWorld"),
+    PLAYER("org/commonPlayer");
 
 
     private final String messageName;

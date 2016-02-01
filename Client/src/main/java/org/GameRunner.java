@@ -1,3 +1,5 @@
+package org;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -6,13 +8,11 @@ import org.slf4j.LoggerFactory;
  */
 public class GameRunner {
     private static final Logger logger;
-
     static{
         logger = LoggerFactory.getLogger(GameRunner.class);
-        logger.debug("GameRunner logger initialized");
+        logger.debug("org.GameRunner logger initialized");
     }
-
     public static void main(String[] args){
-        logger.debug("GameRunner main method called");
+        logger.debug("org.GameRunner main method called");
     }
 }

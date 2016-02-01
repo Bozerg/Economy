@@ -1,5 +1,6 @@
-package Networking;
+package org.networking;
 
+import org.commonNetworking.Message;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -19,12 +20,12 @@ public class Broadcast {
         }
     }
 
-    public Boolean sendMessage(Networking.Message message )
+    public Boolean sendMessage(Message message)
     {
         try {
             if (socket!=null) {
                 PrintWriter pr = new PrintWriter(socket.getOutputStream());
-                pr.print(message.name+"|"+message.type+"|"+message.message);
+                pr.print(message.name+"|"+message.type+"|"+message.body);
             }
         }catch(IOException ioe){
             ioe.printStackTrace();//Fixme: Log me
