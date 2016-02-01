@@ -27,7 +27,8 @@ public class Broadcast {
                 PrintWriter pr = new PrintWriter(socket.getOutputStream());
                 pr.print(message.name+"|"+message.type+"|"+message.body);
             }
-        }catch(IOException ioe){
+        }
+        catch(IOException ioe){
             ioe.printStackTrace();//Fixme: Log me
         }
         return true;

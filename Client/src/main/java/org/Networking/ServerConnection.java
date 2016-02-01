@@ -29,8 +29,8 @@ public final class ServerConnection {
     private URL getServerUrl(){
         try{
             return new URL("bozerg.ddns.net");
-        }catch(MalformedURLException me)
-        {
+        }
+        catch(MalformedURLException me){
             me.printStackTrace();//Fix-me: Log this
             return null;
         }
