@@ -10,9 +10,9 @@ public class GameRunner {
     private static final Logger logger;
     static{
         logger = LoggerFactory.getLogger(GameRunner.class);
-        logger.debug("org.GameRunner logger initialized");
+        logger.debug("logger initialized");
     }
     public static void main(String[] args){
-        logger.debug("org.GameRunner main method called");
+        logger.debug("main method called");
     }
 }
