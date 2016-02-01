@@ -54,7 +54,7 @@
         <!-- Log everything to file -->
         <appender-ref ref="FILE" />
         <!-- Log everything to console -->
-        <!-- <appender-ref ref="STDOUT" /> -->
+        <appender-ref ref="STDOUT" />
     </root>
 
 </configuration>
